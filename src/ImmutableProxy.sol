@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 contract ImmutableProxy {
     address immutable implementation;
 
-    constructor(address _implementation) {
+    constructor(address _implementation) payable {
         implementation = _implementation;
     }
 
